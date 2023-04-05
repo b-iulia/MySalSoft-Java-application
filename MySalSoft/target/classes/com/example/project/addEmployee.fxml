@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.ControllerAddEmployee">
+   <top>
+      <AnchorPane prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: #0b3661;" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="10.0" style="-fx-background-color: #0b3661;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="10.0" style="-fx-background-color: #0b3661;" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: #0b3661;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Logged in as Administrator" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana Italic" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="logOutButton" alignment="CENTER" layoutX="768.0" layoutY="14.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="48.0" prefWidth="98.0" style="-fx-background-color: #5d6e80; -fx-background-radius: 15; -fx-font-size: 18; -fx-font-family: Verdana;" text="Log out" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" alignment="CENTER" layoutX="541.0" layoutY="442.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="48.0" prefWidth="98.0" style="-fx-background-color: #5d6e80; -fx-background-radius: 15; -fx-font-size: 18; -fx-font-family: Verdana;" text="Cancel" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="addButton" alignment="CENTER" layoutX="209.0" layoutY="442.0" mnemonicParsing="false" onAction="#addButtonOnAction" prefHeight="48.0" prefWidth="181.0" style="-fx-background-color: #5d6e80; -fx-background-radius: 15; -fx-font-size: 18; -fx-font-family: Verdana;" text="Add employee" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="firstNameField" layoutX="204.0" layoutY="154.0" prefHeight="26.0" prefWidth="223.0" />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="153.0" prefHeight="30.0" prefWidth="170.0" text="First name:" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastNameField" layoutX="204.0" layoutY="202.0" prefHeight="26.0" prefWidth="223.0" />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="201.0" prefHeight="30.0" prefWidth="170.0" text="Last name:" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailField" layoutX="204.0" layoutY="250.0" prefHeight="26.0" prefWidth="223.0" />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="249.0" prefHeight="30.0" prefWidth="170.0" text="Email:" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NINfield" layoutX="593.0" layoutY="154.0" prefHeight="26.0" prefWidth="223.0" />
+            <Label alignment="CENTER" layoutX="449.0" layoutY="153.0" prefHeight="30.0" prefWidth="170.0" text="N.I.N (CNP):" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="jobField" layoutX="593.0" layoutY="202.0" prefHeight="26.0" prefWidth="223.0" />
+            <Label alignment="CENTER" layoutX="449.0" layoutY="201.0" prefHeight="30.0" prefWidth="170.0" text="Job:" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="35.0" layoutY="297.0" prefHeight="30.0" prefWidth="170.0" text="Employment type:" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="salaryField" layoutX="593.0" layoutY="250.0" prefHeight="26.0" prefWidth="173.0" />
+            <Label alignment="CENTER" layoutX="449.0" layoutY="249.0" prefHeight="30.0" prefWidth="170.0" text="Gross pay:" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="449.0" layoutY="297.0" prefHeight="30.0" prefWidth="170.0" text="Meal vouchers:" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="777.0" layoutY="249.0" prefHeight="30.0" prefWidth="38.0" text="RON" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="777.0" layoutY="297.0" prefHeight="30.0" prefWidth="38.0" text="/day" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="typeOfEmp" layoutX="204.0" layoutY="298.0" prefHeight="26.0" prefWidth="223.0" style="-fx-background-color: white; -fx-border-color: #bfbfbf; -fx-border-radius: 3;" />
+            <ChoiceBox fx:id="vouchersField" layoutX="593.0" layoutY="298.0" prefHeight="26.0" prefWidth="173.0" style="-fx-background-color: white; -fx-border-color: #bfbfbf; -fx-border-radius: 3;" />
+            <Label alignment="CENTER" layoutX="48.0" layoutY="81.0" prefHeight="20.0" prefWidth="560.0" text="Please fill in the following details about the new employee:" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="warningMessageLabel" layoutX="55.0" layoutY="112.0" prefHeight="20.0" prefWidth="421.0" textFill="#c61010">
+               <font>
+                  <Font name="Verdana" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="35.0" layoutY="345.0" prefHeight="30.0" prefWidth="170.0" text="Tax deductible:" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dependentsField" layoutX="593.0" layoutY="346.0" prefHeight="26.0" prefWidth="223.0" />
+            <Label alignment="CENTER" layoutX="449.0" layoutY="345.0" prefHeight="30.0" prefWidth="170.0" text="Dependents:" textFill="#3a495b">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="deductible" layoutX="204.0" layoutY="346.0" prefHeight="26.0" prefWidth="223.0" style="-fx-background-color: white; -fx-border-color: #bfbfbf; -fx-border-radius: 3;" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
