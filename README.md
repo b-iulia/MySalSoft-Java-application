@@ -1,5 +1,5 @@
 # MySalSoft-Java-application
-MySalSoft is a Java software application with graphical user interface that facilitates the process of computing salaries for the employees of a company.
+MySalSoft is a Java software application with graphical user interface, created using JavaFX, that facilitates the process of computing salaries for the employees of a company.
 Data about employees and salaries are kept in a database.
 The app mostly focuses on easing the accountants’ work, helping fulfill tasks in simpler, more efficient and more accurate ways.
 
